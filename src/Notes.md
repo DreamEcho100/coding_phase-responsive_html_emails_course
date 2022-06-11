@@ -64,3 +64,5 @@ git subtree push --prefix $1 origin gh-pages
 git add . && git commit -m "Minor changes fix" && git push -u origin main
 
 npm run build && cd dist && git add . && git commit -m "test3" && git push -u origin gh-pages -f
+
+cd ..
