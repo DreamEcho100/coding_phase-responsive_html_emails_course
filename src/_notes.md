@@ -61,8 +61,10 @@ git subtree push --prefix $1 origin gh-pages
 
 ## Method 2
 
-git add . && git commit -m "Minor changes fix" && git push -u origin main
+```bash
+git add . && git commit -m "Adding the _lets-you_ row" && git push -u origin main
 
-npm run build && cd dist && git add . && git commit -m "test3" && git push -u origin gh-pages -f
+npm run build && cd dist && git add . && git commit -m "Updating build" && git push -u origin gh-pages -f
 
 cd ..
+```
