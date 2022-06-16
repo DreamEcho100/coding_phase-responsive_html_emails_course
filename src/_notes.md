@@ -62,7 +62,7 @@ git subtree push --prefix $1 origin gh-pages
 ## Method 2
 
 ```bash
-git add . && git commit -m "Adding the _advance_ row" && git push -u origin main
+git add . && git commit -m "Adding the _(one solution, join together, detail)_ row" && git push -u origin main
 
 npm run build && cd dist && git add . && git commit -m "Updating build" && git push -u origin gh-pages -f
 
