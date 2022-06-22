@@ -49,11 +49,50 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 				}
 
 				.header-left {
-					width: 100px;
+					width: 100%;
 				}
 
 				.header-right {
-					width: 100px;
+					width: 100%;
+				}
+
+				.lets-you-row .row-section-header {
+					padding: 0 !important;
+					margin: 40px 40px 10px 40px !important;
+					font-weight: 500 !important;
+				}
+				.lets-you-row .column {
+					width: 100%;
+					text-align: center;
+					padding: 25px !important;
+				}
+				.lets-you-row .title-icon {
+					width: 100%;
+				}
+				.lets-you-row .title-icon .icon-holder {
+					text-align: right;
+				}
+				.lets-you-row .title-icon .text-holder {
+					text-align: left;
+				}
+
+				.advance-table .image_head {
+					width: 100%;
+				}
+
+				.advance-table .column {
+					width: 100%;
+					text-align: center;
+					padding: 25px 5px 5px 5px !important;
+				}
+
+				.advance-table .column .store {
+					text-align: center;
+				}
+
+				.advance-table .column .text-holder p {
+					margin: 10px 0 15px 0 !important;
+					padding: 0 !important;
 				}
 			}
 		</style>
@@ -249,7 +288,7 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 
 						<!-- Start of the lets-you row -->
 						<tr style="background-color: #fafafa">
-							<td>
+							<td class="lets-you-row">
 								<h3
 									style="
 										font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial,
@@ -262,6 +301,7 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 										margin-top: 0;
 									"
 									align="center"
+									class="row-section-header"
 								>
 									HERO LET'S YOU...
 								</h3>
@@ -271,7 +311,7 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 									border="0"
 									cellspacing="0"
 									cellpadding="0"
-									class="left-column"
+									class="left-column column"
 									width="33.33%"
 									align="left"
 									style="padding: 15px 15px 70px 15px"
@@ -287,13 +327,14 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 												style="padding: 0"
 											>
 												<tr>
-													<td>
+													<td class="icon-holder">
 														<img
 															src="./images/bell_icon.png"
 															alt="image of a bell"
 														/>
 													</td>
 													<td
+														class="text-holder"
 														style="
 															font-family: 'Open Sans', 'Helvetica Neue',
 																Helvetica, Arial, 'Lucida Grande', sans-serif;
@@ -351,7 +392,7 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 									border="0"
 									cellspacing="0"
 									cellpadding="0"
-									class="middle-column"
+									class="middle-column column"
 									width="33.33%"
 									align="left"
 									style="padding: 15px 15px 70px 15px"
@@ -367,13 +408,14 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 												style="padding: 0"
 											>
 												<tr>
-													<td>
+													<td class="icon-holder">
 														<img
 															src="./images/share_icon.png"
 															alt="image of a share"
 														/>
 													</td>
 													<td
+														class="text-holder"
 														style="
 															font-family: 'Open Sans', 'Helvetica Neue',
 																Helvetica, Arial, 'Lucida Grande', sans-serif;
@@ -431,7 +473,7 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 									border="0"
 									cellspacing="0"
 									cellpadding="0"
-									class="right-column"
+									class="right-column column"
 									width="33.33%"
 									align="left"
 									style="padding: 15px 15px 70px 15px"
@@ -447,13 +489,14 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 												style="padding: 0"
 											>
 												<tr>
-													<td>
+													<td class="icon-holder">
 														<img
 															src="./images/wifi_icon.png"
 															alt="image of a wifi"
 														/>
 													</td>
 													<td
+														class="text-holder"
 														style="
 															font-family: 'Open Sans', 'Helvetica Neue',
 																Helvetica, Arial, 'Lucida Grande', sans-serif;
@@ -524,7 +567,7 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 										<td style="padding: 36px 0 5px 0" align="center">
 											<img
 												src="./images/image_head.jpg"
-												class="model with apple watch"
+												class="model with apple watch image_head"
 											/>
 										</td>
 									</tr>
@@ -552,7 +595,7 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 									<tr>
 										<td>
 											<table
-												class="advance-table"
+												class="left-column column"
 												width="50%"
 												border="0"
 												cellspacing="0"
@@ -560,7 +603,7 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 												style="padding: 15px 15px 70px 15px; background: white"
 												align="left"
 											>
-												<tr>
+												<tr class="text-holder">
 													<td>
 														<p
 															style="
@@ -579,8 +622,8 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 														</p>
 													</td>
 												</tr>
-												<tr>
-													<td class="left-store" align="right">
+												<tr class="left-store store" align="right">
+													<td>
 														<img
 															src="./images/appstore.png"
 															alt="logo of apple appstore"
@@ -589,7 +632,7 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 												</tr>
 											</table>
 											<table
-												class="advance-table"
+												class="right-column column"
 												width="50%"
 												border="0"
 												cellspacing="0"
@@ -597,7 +640,7 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 												style="padding: 15px 15px 70px 15px; background: white"
 												align="right"
 											>
-												<tr>
+												<tr class="text-holder">
 													<td>
 														<p
 															style="
@@ -616,8 +659,8 @@ https://www.w3schools.com/tags/tag_doctype.asp -->
 														</p>
 													</td>
 												</tr>
-												<tr>
-													<td class="right-store" align="left">
+												<tr class="right-store store" align="left">
+													<td>
 														<img
 															src="./images/playstore.png"
 															alt="logo for android playstore"
