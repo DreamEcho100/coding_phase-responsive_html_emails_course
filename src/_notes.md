@@ -62,9 +62,14 @@ git subtree push --prefix $1 origin gh-pages
 ## Method 2
 
 ```bash
-git add . && git commit -m "Adding responsiveness for (one-solution-table, join-together-table, detail-table) rows and some finishing touches" && git push -u origin main
+git add . && git commit -m "Adding production images" && git push -u origin main
 
 npm run build && cd dist && git add . && git commit -m "Updating build" && git push -u origin gh-pages -f
 
 cd ..
 ```
+
+## Useful Websites
+
+[TinyPNG](https://tinypng.com/)
+[Test your HTML emails before sending them!](https://putsmail.com/)
